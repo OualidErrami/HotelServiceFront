@@ -1,0 +1,11 @@
+<form (ngSubmit)="onsubmit(reservationForm.value)" class="container" [formGroup]="reservationForm">
+    <div class="form-group">
+      <label for="dateDeDebut">date de debut:</label>
+      <input type="date" class="form-control" formControlName="dateDeDebut" >
+    </div>
+    <div class="form-group">
+        <label for="dateDeDebut">date de fin:</label>
+        <input type="date" class="form-control" formControlName="dateDeFin" >
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

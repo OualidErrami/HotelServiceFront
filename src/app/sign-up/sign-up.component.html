@@ -1,0 +1,50 @@
+<div class="ctn">
+    <div class="container">
+        <form [formGroup]="SignUpForm"(ngSubmit)="Signup(SignUpForm.value)">
+            <div class="form-group">
+                <mat-form-field appearance="legacy">
+                    <mat-label for="nom" >nom </mat-label>
+                    <input type="text" matInput formControlName="nom">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field appearance="legacy">
+                    <mat-label for="prenom" >prenom</mat-label>
+                    <input type="text" matInput formControlName="prenom">
+
+                </mat-form-field>
+            </div>
+            <div  class="form-group">
+                <mat-form-field appearance="legacy">
+                    <mat-label for="email" >email </mat-label>
+                    <input type="email" matInput formControlName="email">
+                </mat-form-field>
+            </div >
+            <div class="form-group">
+                <mat-form-field appearance="legacy">
+                    <mat-label for="password" >password</mat-label>
+                    <input type="password" matInput formControlName="password" >
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <label for="sexe">sexe:</label>
+                <mat-radio-group formControlName="sexe"  name="sexe">    
+                    <mat-radio-button name="sexe"  value="male">male</mat-radio-button>  
+                    <mat-radio-button name="sexe" value="female">female</mat-radio-button>  
+                </mat-radio-group>
+            </div>
+            <div class="form-group" >
+                <mat-form-field appearance="legacy">
+                    <mat-label for="telephone">Telephone</mat-label>
+                    <input type="text" matInput formControlName="telephone">
+                </mat-form-field>
+            </div>
+            <div class="form-group" appearance="legacy">
+                <button mat-raised-button  color="primary">Sign up</button>
+            </div>
+            <div class="form-group">
+                <p> have an accont.<strong><a routerLink="/SignIn">SignIn</a></strong></p>
+            </div>
+        </form>
+    </div>
+</div>

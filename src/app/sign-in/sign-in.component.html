@@ -1,0 +1,31 @@
+<div class="ctn">
+    <div class="container">
+        <form [formGroup]="SignInForm"(ngSubmit)="SignIn(SignInForm.value)" class="form">
+            <div  class="form-group">
+                <mat-form-field appearance="legacy">
+                    <mat-label for="email" >email </mat-label>
+                    <input type="email" matInput formControlName="email">
+                    <mat-error *ngIf="submitted && SignInForm.controls['email'].hasError('required')">email is required</mat-error>
+                </mat-form-field>
+            </div >
+            <div class="form-group">
+                <mat-form-field appearance="legacy">
+                    <mat-label for="password" >password</mat-label>
+                    <input type="password" matInput formControlName="password" >
+                    <mat-error *ngIf="submitted && invalid ">
+                        password is required 
+                    </mat-error>
+                </mat-form-field>
+                <span *ngIf="submitted && invalid">
+                    email or password incorrect
+                 </span>
+            </div>
+            <div class="form-group" appearance="legacy">
+                <button mat-raised-button  color="primary">Login</button>
+            </div>
+            <div class="form-group">
+                <p>dont' have an account?<strong><a routerLink="/SignUp">Signup</a></strong></p>
+            </div>
+        </form>
+    </div>
+</div>
