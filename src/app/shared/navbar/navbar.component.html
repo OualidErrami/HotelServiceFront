@@ -1,20 +1,19 @@
-<nav class="navbar navbar-expand-lg ">
-    <a class="navbar-brand" routerLink="/accueil">Hotel</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" routerLink="/accueil">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" routerLink="/reclamation">Reclamation</a>
-        <div ngbDropdown class="d-inline-block">
-            <button class="btn" id="dropdownMenu1" ngbDropdownToggle>Toggle dropdown</button>
-            <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <button class="dropdown-item">Action - 1</button>
-              <button class="dropdown-item">Another Action</button>
-              <button class="dropdown-item">Something else is here</button>
-            </div>
-          </div>
-      </div>
+<div class="container-nav navbar navbar-expand-lg ">
+  <div class="left-nav ">
+    <img src="" />
+    <div class="action-1 nav-item">
+      <a class="text-2 nav-link active" routerLink="/accueil">Home</a>
     </div>
-  </nav>
+  </div>
+  <div class="right-nav">
+    <div class="profile">
+      <div class="avatar">
+        <div class="image" >
+          <p class="text-5">{{firstname}} {{lastname}}</p>
+          <img  src="../../../assets/images/no_user_image.png" />  
+        </div>  
+      </div>    
+      
+    </div>
+  </div>
+</div>

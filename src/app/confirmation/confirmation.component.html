@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+<mat-stepper orientation="vertical" #stepper (selectionChange)="onStepChange($event)">
+    <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+    <ng-template matStepLabel>Entrer votre nom</ng-template>
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput class="form-control " name="nom" formControlName="nom" >
+    </mat-form-field>
+</form>
+<button mat-button matStepperNext>Next</button>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+    <ng-template matStepLabel>Entrer la date de debut</ng-template>
+      <mat-form-field appearance="fill">
+        <mat-label>Date de debut</mat-label>
+        <input matInput [matDatepicker]="picker" [min]="todayDate"  formControlName="dateDeDebut"> 
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+</form>
+<button mat-button matStepperPrevious>Back</button>
+<button mat-button matStepperNext>Next</button>
+    </mat-step>
+    <mat-step [stepControl]="ThirdFormGroup">
+        <form [formGroup]="ThirdFormGroup">
+    <ng-template matStepLabel>Entrer la date de fin</ng-template>
+      <mat-form-field appearance="fill">
+        <mat-label>Date de fin</mat-label>
+        <input matInput [matDatepicker]="pick" [min]="todayDate" formControlName="datedefin"> 
+        <mat-datepicker-toggle matSuffix [for]="pick"></mat-datepicker-toggle>
+        <mat-datepicker #pick></mat-datepicker>
+    </mat-form-field>
+</form>
+<button mat-button matStepperPrevious>Back</button>
+<button mat-button matStepperNext>Next</button>
+    </mat-step>
+    <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <form [formGroup]="reservationForms" (ngSubmit)="submit(reservationForms.value)">
+    <button mat-raised-button color="primary" type="submit" >confirmer</button>
+</form>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button  color="warn" (click)="stepper.reset()">Reset</button>
+    </div>
+</mat-step>
+</mat-stepper>
+
+
+
+
+
+
+
+
+
+

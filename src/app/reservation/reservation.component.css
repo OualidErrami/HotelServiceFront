@@ -1,0 +1,173 @@
+
+input[type="date"]{
+    display: flex;
+    margin: auto;
+    max-width: 400px;
+    width: 400px;
+    min-width: 200px;
+}
+.btn{
+    margin: auto;
+    margin-top: 15px;
+    display: block;
+}
+
+label{
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+form{
+  display :flex;
+  flex-direction: column;
+  
+}
+.card {
+  flex-direction: row;  
+}
+#margin{
+  margin-top: 25px;
+}
+#card {
+  border: none;
+  padding-top:25px ;
+}
+
+.form-group{
+  justify-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.frame-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px 0px;
+  }
+  .frame-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+  }
+  .img-1 {
+    height: auto;
+    width: 717px;
+    height: 478px;
+  }
+  .frame-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .frame-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+  .text-2 {
+    text-align: left;
+    vertical-align: top;
+    font-size: 36px;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    line-height: 70px;
+    color: #000000;
+  }
+  .text-3 {
+    text-align: left;
+    vertical-align: top;
+    font-size: 24px;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #000000;
+  }
+  .text-4 {
+    text-align: right;
+    vertical-align: bottom;
+    font-size: 24px;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+
+  @media (max-width: 600px) {
+    .desktop---2 {
+      height: 1024px;
+      width: 1426px;
+      background-color: #ffffff;
+    }
+    .frame-5 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 15px 0px;
+    }
+    .frame-4 {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 10px;
+      gap: 10px;
+    }
+    .img-1 {
+      height: auto;
+      width: 100%;
+    }
+    .frame-3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .frame-6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 50px;
+    }
+    .text-2 {
+      text-align: left;
+      vertical-align: top;
+      font-size: 36px;
+      font-family: Roboto;
+      letter-spacing: 1px;
+      line-height: 70px;
+      color: #000000;
+    }
+    .text-3 {
+      text-align: left;
+      vertical-align: top;
+      font-size: 24px;
+      font-family: Roboto;
+      letter-spacing: 1px;
+      line-height: 30px;
+      color: #000000;
+    }
+    form{
+      display :flex;
+      flex-direction: column;
+      
+  }
+  .form-group{
+      justify-items: left;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin: auto;
+  }
+  }
+  

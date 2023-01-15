@@ -10,7 +10,7 @@ export class ImagesserviceService {
 
 
   public getimage(headers:HttpHeaders){
-    return this.http.get<any>(this.host+"photo/photos/3",{headers:headers})
+    return this.http.get<any>(this.host+"photo/photos/1",{headers:headers})
   }
 
 }

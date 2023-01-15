@@ -32,6 +32,6 @@ export class UserService {
   }
 
   public getuserbytoken(token:any,header:HttpHeaders){
-    return this.http.post(this.host+'/hotel/userbytoken',token,{headers:header})
+    return this.http.post<any>(this.host+'/hotel/userbytoken',token,{headers:header})
   }
 }

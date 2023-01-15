@@ -18,8 +18,14 @@ import { AccueilComponent } from './accueil/acceuil.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import {NgbDropdownModule} from '@ng-bootstrap/ng-bootstrap';
 import { ReservationComponent } from './reservation/reservation.component';
-
-
+import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatRippleModule} from '@angular/material/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { TestComponent } from './test/test.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
+import {MatStepperModule} from '@angular/material/stepper'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,10 +33,17 @@ import { ReservationComponent } from './reservation/reservation.component';
     SignInComponent,
     AccueilComponent,
     NavbarComponent,
-    ReservationComponent
+    ReservationComponent,
+    TestComponent,
+    ConfirmationComponent
   ],
   imports: [
     BrowserModule,
+    NgbModule,
+    MatRippleModule,
+    MatDatepickerModule,
+    MatCardModule,
+    MatNativeDateModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
@@ -42,7 +55,8 @@ import { ReservationComponent } from './reservation/reservation.component';
     MatRadioModule,
     MatCommonModule,
     MatIconModule,
-    NgbDropdownModule
+    NgbDropdownModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
